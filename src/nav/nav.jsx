@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import "./nav.css"
 import logo from "./assets/logo-prueba.png"
 
@@ -56,7 +56,7 @@ export default function Navbar() {
 	return (
 		<header className="nav-header" id="header" >
 				<figure className="figure" >
-					<img src={logo} className="logo" id="logo" />
+					<img alt="logo estereocolor" src={logo} className="logo" id="logo" />
 				</figure>	
 				<nav className="nav-menu" ref={navRef} id="nav" >
 					<ul className="nav-ul">

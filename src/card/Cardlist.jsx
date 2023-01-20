@@ -281,9 +281,9 @@ export default function Cardlist() {
                </div>
                <div className={selectedCard.length > 0 ? "overlay active" : "overlay"} >        
                     <div className={selectedCard.length > 0 ? "popup active" : "popup"} >
-                        <a href="#"  onClick={clearSelected} className="btn-cerrar-popup">X</a>
+                        <a href="/#"  onClick={clearSelected} className="btn-cerrar-popup">X</a>
                         <div className="container" >
-                            <img src={selectedCard[0]?.image} className="image" />
+                            <img alt="estereo color" src={selectedCard[0]?.image} className="image" />
                             <div className="info1">
                                 <h3>{ promotion? 'Lista de combos': selectedCard[0]?.title}</h3>
                                 
