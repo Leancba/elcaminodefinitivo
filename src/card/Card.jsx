@@ -3,13 +3,15 @@ import "./cards.css";
 
 export default function Card({ id, title, description, image , setSelected, setPromotion}) {
   
-    const clickHandler = () => {
+    const clickHandler = (e) => {
+        e.preventDefault();
         setPromotion(undefined)
         setSelected(id);
         
       };
 
-    const clickPromotion = () => {
+    const clickPromotion = (e) => {
+      e.preventDefault();
       setPromotion(true)
       setSelected(id)
       
