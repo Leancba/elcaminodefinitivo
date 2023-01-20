@@ -1,0 +1,19 @@
+
+.bottom{
+    background-color: rgb(0, 0, 0);
+    color: #dd9f57;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+footer .legend{
+    background: rgb(0, 0, 0);
+    
+}
+
+.map{
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
