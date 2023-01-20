@@ -30,14 +30,14 @@ export default function About(){
                     Contactanos
                     </h3>
                     <p className="text">
-                    Si quieres ponerte en contacto o saber mas sobre nosotros, te invitamos a que nos sigas en nuestro perfil de <a target="_blank" href="https://www.facebook.com/ElCaminoCosmetica" className="facebook" ><span  >Facebook</span></a>, <a className="instagram" href="https://www.instagram.com/estereocolorvidal/" target="_blank" ><span >Instagram</span></a> o puedes ponerte en contacto directo con un representante, haz click en el siguiente enclace para comenzar una conversacion via <a className="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=5493513289063"  ><span >Whatsapp</span></a>
+                    Si quieres ponerte en contacto o saber mas sobre nosotros, te invitamos a que nos sigas en nuestro perfil de <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/ElCaminoCosmetica" className="facebook" ><span  >Facebook</span></a>, <a className="instagram" href="https://www.instagram.com/estereocolorvidal/" target="_blank" rel="noopener noreferrer" ><span >Instagram</span></a> o puedes ponerte en contacto directo con un representante, haz click en el siguiente enclace para comenzar una conversacion via <a className="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=5493513289063" rel="noopener noreferrer" ><span >Whatsapp</span></a>
                     </p>
                  
             </div>
-            <a href="https://www.instagram.com/estereocolorvidal/" class="btn-ins" target="_blank"> 
+            <a rel="noopener noreferrer" href="https://www.instagram.com/estereocolorvidal/" class="btn-ins" target="_blank"> 
 	                <i className="fa fa-instagram icono"></i>
 	            </a>
-                <a href="https://api.whatsapp.com/send?phone=5493513289063" class="btn-wsp" target="_blank"> 
+                <a rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5493513289063" class="btn-wsp" target="_blank"> 
 	                <i className="fa fa-whatsapp icono"></i>
 	            </a>
         </section>

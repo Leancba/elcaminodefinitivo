@@ -27,13 +27,13 @@ export default function Card({ id, title, description, image , setSelected, setP
                  <div className="card-info" >
                     <ul class="slide-foot">
 									    <li>
-                        <a onClick={clickHandler} >
+                        <a href="/#" onClick={clickHandler} >
                           <i className="fa-plus"   class="fa fa-plus "></i> 
                           <span>Más informacion</span>
                         </a>
                       </li>
 									    <li>
-                        <a onClick={clickPromotion} >
+                        <a href="/#" onClick={clickPromotion} >
                           <i class="fa fa-smile-o "  ></i> 
                           <span>Promociones</span>           
                         </a>

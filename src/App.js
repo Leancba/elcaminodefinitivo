@@ -1,6 +1,6 @@
 import './App.css';
 
-import Nav from '../src/nav/nav'
+import Nav from './nav/nav'
 import Carousel from './carousel/carousel'
 import About from './about/About';
 import Info from './info/info';
