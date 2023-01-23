@@ -11,6 +11,8 @@ import image5 from "./assets/oleos.png"
 import image6 from "./assets/Ablandador.png"
 import image7 from "./assets/silver.png"
 import image8 from "./assets/black.png"
+import image9 from "./assets/polvo-decolorante-it.jpg"
+import image10 from "./assets/polvo-decolorante.png"
 
 import Carta_colores from "./download/Tonos-Estereo-Kit-y-Exhibidor_23-2-2022_compressed.pdf"
 import Carta_funky from "./download/Carta de Funkys.pdf"
@@ -212,7 +214,7 @@ const Json = [
        
     },
     {
-        id:7,
+        id:8,
         title:'SHAMPOO BLACK',
         description:'Línea para cabellos rubios, grises o blancos. Fórmula desarrollada con pigmentos color violeta, elimina gradualmente los reflejos amarillos del cabello gris, blanco o rubio',
         image:image8,
@@ -231,6 +233,54 @@ const Json = [
             {   
                 numero: 4,
                 promo: '12 unidades x $13824'
+            }
+        ]
+       
+    },
+    {
+        id:9,
+        title:'Polvo decolorante 20gr',
+        description:'Decolora el cabello en forma ultra rápida, aclara hasta 7 tonos. Formula 1+3, alto rendimiento en el uso. DUST FREE, reduce la inhalación de partículas volátiles eliminando los riesgos de irritación. Contenido: Sobres con caja exhibidora de 20 grs x 24 unidades ',
+        image:image9,
+        promotion: [
+            {   numero: 1,
+                promo: '10 unidades x $2100'
+            },
+            {   
+                numero: 2,  
+                promo: '15 unidades x $3150'
+            },
+            {   
+                numero: 3,
+                promo: '20 unidades x $4200'
+            },
+            {   
+                numero: 4,
+                promo: '25 unidades x $5250'
+            }
+        ]
+       
+    },
+    {
+        id:10,
+        title:'Polvo decolorante Italiano 20gr ',
+        description:'Decolora el cabello en forma ultra rápida, aclara hasta 7 tonos. Formula 1+3, alto rendimiento en el uso. DUST FREE, reduce la inhalación de partículas volátiles eliminando los riesgos de irritación. Contenido: Sobres con caja exhibidora de 20 grs x 24 unidades ',
+        image:image10,
+        promotion: [
+            {   numero: 1,
+                promo: '10 unidades x $2600'
+            },
+            {   
+                numero: 2,  
+                promo: '15 unidades x $3900'
+            },
+            {   
+                numero: 3,
+                promo: '20 unidades x $5200'
+            },
+            {   
+                numero: 4,
+                promo: '25 unidades x $6500'
             }
         ]
        
@@ -295,20 +345,25 @@ export default function Cardlist() {
                                         <h3> Promo {card.numero} </h3>
                                         <p>{card.promo} </p>          
                                    </div>
-                                   )}
+                                   
+                                   )}  
                                 <p id="consultas"><i class="fas fa-exclamation"></i>Consulte por combos personalizados</p>
+                                    
                                  </div> 
                                  
                                  : 
                                  
                                  <div> 
                                     <p>{selectedCard[0]?.description}</p>
-                                    {selectedCard[0]?.catalog ? <div>
+                                    {selectedCard[0]?.catalog ? 
+                                    
+                                    <div >
                                         <a download href = {selectedCard[0]?.catalog}>
                                             <button class="btn">
                                                 <i class="fas fa-download"/> <span>{selectedCard[0]?.catalog_type}</span>
                                             </button>
                                         </a>
+                                        
                                     </div>  
                                     :
                                     <div>
@@ -318,7 +373,7 @@ export default function Cardlist() {
                                 </div>
                                 } 
                             </div>
-                            
+                                <span className="responsive-button" href="/#"  onClick={clearSelected}>Cerrar</span> 
                         </div>
                         
                     </div>

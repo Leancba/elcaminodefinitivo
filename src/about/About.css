@@ -157,9 +157,20 @@ background: linear-gradient(90deg, rgba(0,123,255,1) 0%, rgba(118,203,255,1) 100
 @media only screen and (min-width:320px) and (max-width:768px){
 
   .btn-wsp{
-      width:63px;
-      height:63px;
-      line-height: 66px;
+      width:55px;
+      height:55px;
+      line-height: 55px;
+      right:5px;
       
 }
+
+.btn-ins{
+  width:55px;
+  height:55px;
+  line-height: 55px;
+  right:5px;
+
+
+  }
+
 }

@@ -121,16 +121,23 @@
     color: rgba(200, 31, 31, 0.79);
 }
 
+.responsive-button{
+    margin-top: 5px;
+    font-weight: 700;
+    color: rgb(93, 93, 93);
+    text-align: center;
+    opacity: 0; 
+}
+
+
 
 @media only screen and (min-width:320px) and (max-width:768px){
-
     .info1{
-    width: 100%;
-        
+    width: 100%;     
   }
 
   .popup{
-    width: 95%;
+    width: 100%;
   }
 
   .popup h3 {
@@ -151,17 +158,21 @@
     text-align: left;
   }
 
-  
+  .popup .btn-cerrar-popup{
+    display: none ;
   }
 
-
-
+  .responsive-button{
+    opacity: 1;
+}
+  
+  }
 
 
 /* ------------------------- */
 /* ANIMACIONES */
 /* ------------------------- */
-.popup.active {	transform: scale(1); opacity: 1; }
+.popup.active {	transform: scale(.85); opacity: 1; }
 .popup.active p { animation: entradaTexto .8s ease .5s forwards; }
 .popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
 .popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
