@@ -46,16 +46,14 @@ const carousel_item = [
 
 export default function Carousels(){
     return (
+      
         <Carousel className='slider__content'
         autoPlay= 'true'
         interval='3000'
-        emulateTouch='true'
+        emulateTouch='false'
         infiniteLoop='true'
         transitionTime='1000'
-
-        
-        
-        
+        swipeable='true'
         >
           {carousel_item.map( element => (
             <div key={element.id} className='slider__content--item'>

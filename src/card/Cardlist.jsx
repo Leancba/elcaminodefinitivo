@@ -16,8 +16,8 @@ import image10 from "./assets/polvo-decolorante.png"
 
 import Carta_colores from "./download/Tonos-Estereo-Kit-y-Exhibidor_23-2-2022_compressed.pdf"
 import Carta_funky from "./download/Carta de Funkys.pdf"
-import catalogo_shock from "./download/CATALOGO-OLEOS.pdf"
-import catalogo_oleos from "./download/CATALOGO-SHOCKS.pdf"
+import catalogo_oleos from "./download/CATALOGO-OLEOS.pdf"
+import catalogo_shock from "./download/CATALOGO-SHOCKS.pdf"
 
 import './cards.css'
 import './popup.css'
