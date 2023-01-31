@@ -50,8 +50,7 @@ export default function Carousels(){
         <Carousel className='slider__content'
         autoPlay= 'true'
         interval='3000'
-        emulateTouch='false'
-        infiniteLoop='true'
+        emulateTouch='true'
         transitionTime='1000'
         swipeable='true'
         >
